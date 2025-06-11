@@ -38,13 +38,13 @@ Here is the schedule:
 | Tue 17 | Bayes | Python / numpy |Bayes |  Introduction to C |
 | Wed 18 | Lister | Introduction to C | Bayes | Practical |
 | Thu 19 | Bayes | Introduction to HPC (i) | Bayes | Practical |
-| Fri 29| Bayes | Introduction to HPC (ii) | Bayes | Practical |
+| Fri 20| Bayes | Introduction to HPC (ii) | Bayes | Practical |
 | | | | | |
-| Mon 1 | OpenMP for GPUs (i) | Parallel CFD example |
-| Tue 2 | OpenMP for GPUs (i) | Parallel CFD example |
-| Wed 3 | Introduction to MPI (i) | Parallel CFD example |
-| Thu 4 | Introduction to MPI (ii) | ACF Visit |
-| Fri 5 | HPC Guest Lectures | Finish up exercises |
+| Mon 23 | Bayes | OpenMP for CPUs (i) | Bayes |  OpenMP for CPUs (ii) |
+| Tue 24 | Lister | OpenMP for CPUs (iii) | Bayes |  Practical |
+| Wed 25 | Lister | OpenMP for GPUs  | Bayes |  ACF visit |
+| Thu 26 | Lister | Introduction to MPI | Bayes |  Practical |
+| Fri 27 | Bayes | HPC Guest Lectures | Bayes | Practical |
 
 ## Overview
 
