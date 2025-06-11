@@ -9,6 +9,8 @@ together.
 
 ## Schedule
 
+There will be a "get-together" meal (food and soft drinks provided) at
+7pm on Saturday 14th June at [Pizza Posto](https://pizzaposto.co.uk/)
 | Day | Morning | Afternoon |
 | --- | ---  | --- |
 | |  | |
