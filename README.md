@@ -31,8 +31,8 @@ minutes from Darroch Court).
 
 Here is the schedule:
 
-| Day | Morning || Afternoon |
-| --- | ---|--  || --- |--|
+| Day | Morning || Afternoon ||
+| --- | ---|--  | --- |--|
 | |  | |
 | Mon 24 | Bayes | Bash shell / git | Bayes | Familiarisation / Python image sharpening |
 | Tue 25 | Introduction to C | C image sharpening |
