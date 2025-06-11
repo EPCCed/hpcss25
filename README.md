@@ -33,7 +33,7 @@ Here is the schedule: in practical sessions students will work on
 their own on exercises based on the lecture material, with an EPCC
 staff member on hand to help.
 
-| Day | Morning || Afternoon ||
+| Day | Morning (normally 9:30)  || Afternoon (normally 14:00) ||
 | --- | ---|--  | --- |--|
 | |  | |
 | Mon 16 | Bayes (**arrive 09:00**) | Introductions / bash / git | Bayes | bash / git |
