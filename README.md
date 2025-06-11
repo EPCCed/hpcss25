@@ -9,13 +9,32 @@ together.
 
 ## Schedule
 
-There will be a "get-together" meal (food and soft drinks provided) at
-**7pm on Saturday 14th** at [Pizza Posto](https://pizzaposto.co.uk/)
+### Arrival
 
-| Day | Morning | Afternoon |
-| --- | ---  | --- |
+There will be a "get-together" meal (food and soft drinks provided) at
+**7pm on Saturday 14th** at [Pizza Posto](https://pizzaposto.co.uk/):
+16 Nicolson St, Edinburgh, EH8 9DH. This is less than 10 minutes' walk
+from the flats in Darroch Court.
+
+### Lectures
+
+The standard day will run from 09.30 to 17:00 with an hour for lunch
+around 12:30 and coffee breaks mid-morning and mid-afternoon.
+
+However, for the first day **Monday 16th** could you please arrive at
+the Bayes Building at 09:00 to give us more time for introductions,
+admin tasks etc.
+
+Lectures will take place in Bayes or Room 2.14 in the Lister Learning
+and Teaching Centre, 5 Roxburgh Pl, Edinburgh EH8 9SU (this is about 5
+minutes from Darroch Court).
+
+Here is the schedule:
+
+| Day | Morning || Afternoon ||
+| --- | ---|--  | --- |--|
 | |  | |
-| Mon 24 | Bash shell / git | Familiarisation / Python image sharpening |
+| Mon 24 | Bayes | Bash shell / git | Bayes | Familiarisation / Python image sharpening |
 | Tue 25 | Introduction to C | C image sharpening |
 | Wed 26 | Introduction to HPC | Parallel image sharpening |
 | Thu 27 | OpenMP for CPUs (i) | Parallel CFD example |
