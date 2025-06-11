@@ -1,7 +1,10 @@
 # EPCC HPC Summer School 2025
 
+This page contains key dates and information for the EPCC HPC Summer
+School 2025 from Saturday June 14th to Saturday June 28th.
+
 For the HPC Summer School we're using material from a range of
-existing courses so this is a central page to help collect them all
+existing courses so this is also a central page to help collect them all
 together.
 
 ## Schedule
