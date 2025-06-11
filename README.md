@@ -25,8 +25,8 @@ However, for the first day **Monday 16th** could you please arrive at
 the Bayes Building at 09:00 to give us more time for introductions,
 admin tasks etc.
 
-Lectures will take place in Bayes or Room 2.14 in the Lister Learning
-and Teaching Centre, 5 Roxburgh Pl, Edinburgh EH8 9SU (this is about 5
+Lectures will take place in Bayes or Room 2.14 in the **Lister Learning
+and Teaching Centre**, 5 Roxburgh Pl, Edinburgh EH8 9SU (this is about 5
 minutes from Darroch Court).
 
 Here is the schedule: in practical sessions students will work on
