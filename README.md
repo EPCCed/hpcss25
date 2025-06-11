@@ -35,11 +35,11 @@ Here is the schedule:
 | --- | ---|--  | --- |--|
 | |  | |
 | Mon 16 | Bayes (**arrive 09:00**) | Introductions / bash / git | Bayes | bash / git |
-| Tue 25 | Introduction to C | C image sharpening |
-| Wed 26 | Introduction to HPC | Parallel image sharpening |
-| Thu 27 | OpenMP for CPUs (i) | Parallel CFD example |
-| Fri 28 | OpenMP for CPUs (ii) | Parallel CFD example |
-| | | |
+| Tue 17 | Bayes | Python / numpy |Bayes |  Introduction to C |
+| Wed 18 | Lister | Introduction to C | Bayes | Practical |
+| Thu 19 | Bayes | Introduction to HPC (i) | Bayes | Practical |
+| Fri 29| Bayes | Introduction to HPC (ii) | Bayes | Practical |
+| | | | | |
 | Mon 1 | OpenMP for GPUs (i) | Parallel CFD example |
 | Tue 2 | OpenMP for GPUs (i) | Parallel CFD example |
 | Wed 3 | Introduction to MPI (i) | Parallel CFD example |
