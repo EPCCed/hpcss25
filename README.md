@@ -34,7 +34,7 @@ Here is the schedule:
 | Day | Morning || Afternoon ||
 | --- | ---|--  | --- |--|
 | |  | |
-| Mon 24 | Bayes | Bash shell / git | Bayes | Familiarisation / Python image sharpening |
+| Mon 16 | Bayes (**arrive 09:00**) | Introductions / bash / git | Bayes | bash / git |
 | Tue 25 | Introduction to C | C image sharpening |
 | Wed 26 | Introduction to HPC | Parallel image sharpening |
 | Thu 27 | OpenMP for CPUs (i) | Parallel CFD example |
