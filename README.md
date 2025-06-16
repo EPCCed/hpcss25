@@ -37,8 +37,8 @@ staff member on hand to help.
 | --- | ---|--  | --- |--|
 | |  | |
 | Mon 16 | Bayes (**arrive 09:00**) | Introductions / bash / git | Bayes | bash / git |
-| Tue 17 | Bayes | Python / numpy |Bayes |  Introduction to C |
-| Wed 18 | Lister | Introduction to C | Bayes | Practical |
+| Tue 17 | Bayes | Python / numpy |Bayes |  [Introduction to Compilers](./introduction-to-c/slides/compiler-essentials-slides.pdf) / [Introduction to C](./introduction-to-c/slides/c-essentials-slides.pdf) |
+| Wed 18 | Lister | [Introduction to C](./introduction-to-c/slides/c-essentials-slides.pdf) | Bayes | Practical |
 | Thu 19 | Bayes | Introduction to HPC (i) | Bayes | Practical |
 | Fri 20| Bayes | Introduction to HPC (ii) | Bayes | Practical |
 | | | | | |
