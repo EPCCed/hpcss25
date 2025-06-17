@@ -48,8 +48,18 @@ staff member on hand to help.
 | Thu 26 | Lister | Introduction to MPI | Bayes |  Practical |
 | Fri 27 | Bayes | HPC Guest Lectures | Bayes | Practical |
 
-###Wednesday PM
+### Wednesday PM
 
+This afternoon practical session is a chance for you to either catch up with the material from the
+first few days (if it was new to you) or to work on a more substantial problem.
+
+We will be using an Image Sharpening example, a program that we will come back to in the HPC sessions on
+Thursday and Friday when we will be experimenting with a range of parallelisation options.
+
+For now this exercise illustrates a number of points:
+
+ * dd
+ * dd
 
 You can find the image sharpening example at https://github.com/EPCCed/hpcss24-sharpen
 
