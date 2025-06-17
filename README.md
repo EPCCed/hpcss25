@@ -76,6 +76,9 @@ On Cirrus you will need to load a module to get a suitable version of Python: `m
 To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load ImageMagick` then `display fuzzy.pgm`. If you cannot get graphics
 to work on your machine then you can copy the images back to your desktop, but you will have to convert then to a non-PGM format first. For example, on Cirrus you can
 issue `convert fuzzy.pgm fuzzy.png`.
+#### Timing
+
+The code prints out times: the calculation time and the overall run time. The calculation time just measures how long it to to apply the filter to the image **excluding** the IO overheads of reading in the fuzzy image and writing it out; the overall run time is the total time from start to finish. To find out how long was spent in IO just subtract the two.
 
 #### Python example
 
