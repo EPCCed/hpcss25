@@ -68,10 +68,10 @@ You can find the image sharpening example at https://github.com/EPCCed/hpcss24-s
 
 I will explain this program and how it works on Thursday but for now we'll just be using the Python and C serial versions (in the P-SER and CSER directories) as examples of program that do lots of computation.
 
-If you want to learn a bit more about the algorithm here is a [sneak preview of Thursday's talk](docs/.). In essence it loops over all the pixels in an image
+If you want to learn a bit more about the algorithm here is a [sneak preview of Thursday's talk](doc/.). In essence it loops over all the pixels in an image
 and applies a large filter to each pixel that uses the values of the pixels in its near vicinity (by default a 17x17 square).
 
-On Cirrus you will need to load a module to get a suitable version of Python: module load python/3.9.13
+On Cirrus you will need to load a module to get a suitable version of Python: `module load python`
 
 To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load ImageMagick` then `display fuzzy.pgm`. If you cannot get graphics
 to work on your machine then you can copy the images back to your desktop, but you will have to convert then to a non-PGM format first. For example, on Cirrus you can
@@ -83,6 +83,21 @@ Things you might like to investigate:
 
 *    How fast is the code on your laptop compared to the Cirrus login nodes?
 
-*    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of d in sharpenalg.py from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
+*    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of `d` in `sharpenalg.py` from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
 
-*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function filter() could be pre-calculate and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image sharpened.pgm.
+*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function `filter()` could be pre-calculate and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image `sharpened.pgm` before and after your changes: they should be **identical**.
+
+  #### C example
+
+The C example is described in [https://github.com/EPCCed/hpcss24-sharpen/doc/sharpen-cirrus1.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpen-cirrus1.pdf).
+
+This sheet covers a lot of topics and assumes you have not used Cirrus before. The material up to and including section 3.8 is relevant here although you can
+skip many of the early sections. The instructions talk about downloading a tar file but you do not need to do this as you already have the source code from github.
+
+Things to look at include:
+
+ *   How much faster is the compiled C version compared to the Python code?
+ *   Does adding compiler optimisation (e.g. -O3) change the performance?
+ *   Does using the GNU compiler gcc, as opposed to Intel's icc, change performance?
+
+
