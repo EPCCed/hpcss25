@@ -73,14 +73,16 @@ and applies a large filter to each pixel that uses the values of the pixels in i
 
 On Cirrus you will need to load a module to get a suitable version of Python: module load python/3.9.13
 
-To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load ImageMagick` then display `image.pgm`. If you cannot get graphics
+To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load ImageMagick` then `display fuzzy.pgm`. If you cannot get graphics
 to work on your machine then you can copy the images back to your desktop, but you will have to convert then to a non-PGM format first. For example, on Cirrus you can
-issue `convert sharpened.pgm sharpened.png`.
+issue `convert fuzzy.pgm fuzzy.png`.
+
+#### Python example
 
 Things you might like to investigate:
 
-    How fast is the code on your laptop compared to the Cirrus login nodes?
+*    How fast is the code on your laptop compared to the Cirrus login nodes?
 
-    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of d in sharpenalg.py from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
+*    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of d in sharpenalg.py from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
 
-    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function filter() could be pre-calculate and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image sharpened.pgm.
+*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function filter() could be pre-calculate and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image sharpened.pgm.
