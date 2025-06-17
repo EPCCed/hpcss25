@@ -66,7 +66,7 @@ For now this exercise illustrates a number of points:
 
 You can find the image sharpening example at https://github.com/EPCCed/hpcss24-sharpen
 
-I will explain this program and how it works on Thursday but for now we'll just be using the Python and C serial versions (in the P-SER and CSER directories) as examples of program that do lots of computation.
+I will explain this program and how it works on Thursday but for now we'll just be using the Python and C serial versions (in the P-SER and CSER directories) as examples of programs that do lots of computation.
 
 If you want to learn a bit more about the algorithm here is a [sneak preview of Thursday's talk](IntroHPC/L02_Sharpen.pdf). In essence it loops over all the pixels in an image
 and applies a large filter to each pixel that uses the values of the pixels in its near vicinity (by default a 17x17 square).
