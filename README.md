@@ -48,3 +48,21 @@ staff member on hand to help.
 | Thu 26 | Lister | Introduction to MPI | Bayes |  Practical |
 | Fri 27 | Bayes | HPC Guest Lectures | Bayes | Practical |
 
+###Wednesday PM
+
+
+You can find the image sharpening example at https://github.com/EPCCed/hpcss24-sharpen
+
+I will explain this program and how it works on Wednesday but for now we'll just be using the Python serial version in the P-SER directory as an example of a program that does lots of computation.
+
+On Cirrus you will need to load a module to get a suitable version of Python: module load python/3.9.13
+
+To view the input and output images (fuzzy.pgm and sharpened.pgm), use module load ImageMagick then display image.pgm.
+
+Things you might like to investigate:
+
+    How fast is the code on your laptop compared to the Cirrus login nodes?
+
+    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of d in sharpenalg.py from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
+
+    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function filter() could be pre-calculate and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image sharpened.pgm.
