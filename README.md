@@ -91,11 +91,12 @@ Things you might like to investigate:
 
 The C example is described in [https://github.com/EPCCed/hpcss24-sharpen/doc/sharpen-cirrus1.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpen-cirrus1.pdf).
 
-This sheet covers a lot of topics and assumes you have not used Cirrus before. The material up to and including section 3.8 is relevant here although you can
-skip many of the early sections. The instructions talk about downloading a tar file but you do not need to do this as you already have the source code from github.
+This sheet covers a lot of topics and assumes you have not used Cirrus before. The material in sections 3.6 to 3.8 is most relevant here: you can
+skip most of the early sections. The instructions talk about downloading a tar file but you do not need to do this as you already have the source code from github. I have also not included any Fortran versions for simplicity.
 
 Things to look at include:
 
+ *   Do you understand the code? The way 2D arrays are allocated using `malloc` is a little complicated - if you really want to know what is going on here then ask a demonstrator!
  *   How much faster is the compiled C version compared to the Python code?
  *   Does adding compiler optimisation (e.g. -O3) change the performance?
  *   Does using the GNU compiler gcc, as opposed to Intel's icc, change performance?
