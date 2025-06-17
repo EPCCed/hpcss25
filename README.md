@@ -53,7 +53,7 @@ staff member on hand to help.
 This afternoon practical session is a chance for you to either catch up with the material from the
 first few days (if it was new to you) or to work on a more substantial problem.
 
-We will be using an Image Sharpening example, a program that we will come back to in the HPC sessions on
+We will be using an **Image Sharpening example**, a program that we will come back to in the HPC sessions on
 Thursday and Friday when we will be experimenting with a range of parallelisation options.
 
 For now this exercise illustrates a number of points:
