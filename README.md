@@ -78,7 +78,7 @@ to work on your machine then you can copy the images back to your desktop, but y
 issue `convert fuzzy.pgm fuzzy.png`.
 #### Timing
 
-The code prints out times: the calculation time and the overall run time. The calculation time just measures how long it to to apply the filter to the image **excluding** the IO overheads of reading in the fuzzy image and writing it out; the overall run time is the total time from start to finish. To find out how long was spent in IO just subtract the two.
+The code prints out times: the calculation time and the overall run time. The calculation time just measures how long it took to apply the filter to the image **excluding** the IO overheads of reading in the fuzzy image and writing out the sharpened one; the overall run time is the total time from start to finish. To find out how long was spent in IO just subtract the two.
 
 #### Python example
 
@@ -88,7 +88,7 @@ Things you might like to investigate:
 
 *    If you want the program to run faster you can change the size of the smoothing filter - try reducing the value of `d` in `sharpenalg.py` from its default value d=8. How does the runtime vary with d? Can you understand this behaviour by looking at the code?
 
-*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function `filter()` could be pre-calculated and stored in an array. If you do alter the code make sure that the output is still correct, e.g. by comparing the output image `sharpened.pgm` before and after your changes: they should be **identical**.
+*    The program is deliberately written very simply and the performance can easily be improved. For example, the values of the (very time-consuming) function `filter()` could be pre-calculated and stored in an array. If you alter the code make sure that the output is still correct, e.g. by comparing the output image `sharpened.pgm` before and after your changes: they should be **identical**.
 
   #### C example
 
