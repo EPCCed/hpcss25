@@ -58,16 +58,24 @@ Thursday and Friday when we will be experimenting with a range of parallelisatio
 
 For now this exercise illustrates a number of points:
 
- * dd
- * dd
+ * an algorithm that does a significant amount of computation;
+ * how to run a Python program on the Cirrus login node;
+ * how to compile and run a C program on the Cirrus login node;
+ * a comparison of the relative performance of C and (naively written) Python;
+ * an opportunity to see a real C program (warts and all!).
 
 You can find the image sharpening example at https://github.com/EPCCed/hpcss24-sharpen
 
-I will explain this program and how it works on Wednesday but for now we'll just be using the Python serial version in the P-SER directory as an example of a program that does lots of computation.
+I will explain this program and how it works on Thursday but for now we'll just be using the Python and C serial versions (in the P-SER and CSER directories) as examples of program that do lots of computation.
+
+If you want to learn a bit more about the algorithm here is a [sneak preview of Thursday's talk](docs/.). In essence it loops over all the pixels in an image
+and applies a large filter to each pixel that uses the values of the pixels in its near vicinity (by default a 17x17 square).
 
 On Cirrus you will need to load a module to get a suitable version of Python: module load python/3.9.13
 
-To view the input and output images (fuzzy.pgm and sharpened.pgm), use module load ImageMagick then display image.pgm.
+To view the input and output images (fuzzy.pgm and sharpened.pgm), use `module load ImageMagick` then display `image.pgm`. If you cannot get graphics
+to work on your machine then you can copy the images back to your desktop, but you will have to convert then to a non-PGM format first. For example, on Cirrus you can
+issue `convert sharpened.pgm sharpened.png`.
 
 Things you might like to investigate:
 
