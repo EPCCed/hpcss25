@@ -122,4 +122,17 @@ We have 8 nodes reserved for the Summer School. To use these, specify:
 ````
 #SBATCH --qos=reservation
 #SBATCH --reservation=tc069_1525575
-```
+````
+
+### Exercises
+
+The default exercises are around looking at the scaling of the pure
+MPI version and seeing if it follows Amdahl's law. You should:
+
+  * plot graphs of speedup and parallel efficiency
+  * see what value of alpha gives a good fit
+  * check if this agrees with what you would estimate from the IO time
+
+If you want to look at Gustafson's law - larger problems scale better
+- then increase the filter size by changing `d`, e.g. you could try
+`d=10` or `d=14`.
