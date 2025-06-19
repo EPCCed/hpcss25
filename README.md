@@ -136,3 +136,7 @@ MPI version and seeing if it follows Amdahl's law. You should:
 If you want to look at Gustafson's law - larger problems scale better
 - then increase the filter size by changing `d`, e.g. you could try
 `d=10` or `d=14`.
+
+The second sheet also mentions OpenMP which is an example of
+loop-based parallelism. You can run these if you want but all the
+details will be explained next week.
