@@ -105,3 +105,21 @@ Things to look at include:
  *   Does using the GNU compiler gcc, as opposed to Intel's icc, change performance?
 
 
+### Thursday PM
+
+This is an opportunity for you to investigate parallel scaling of the
+image sharpening example as described in sections 3.9 onward of:
+[https://github.com/EPCCed/hpcss24-sharpen/doc/sharpen-cirrus1.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpen-cirrus1.pdf).
+The are also additional exercises in
+[https://github.com/EPCCed/hpcss24-sharpen/doc/sharpen-cirrus2.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpen-cirrus2.pdf).
+
+Remember that you should change the line `#SBATCH --account=tc063` to
+`#SBATCH --account=tc069`
+
+#### Using the reservation
+
+We have 8 nodes reserved for the Summer School. To use these, specify:
+````
+#SBATCH --qos=reservation
+#SBATCH --reservation=tc069_1525575
+```
