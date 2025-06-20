@@ -140,3 +140,32 @@ If you want to look at Gustafson's law - larger problems scale better
 The second sheet also mentions OpenMP which is an example of
 loop-based parallelism. You can run these if you want but all the
 details will be explained next week.
+
+### Friday
+
+The main aim of today is to run parallel scaling of the CFD example
+and investigate Amdahl's law and Gustafson's law.
+
+  * The exercise sheets may say "download the code from here" - you
+    should **ignore this** and use the codes in the HPCSS24 git repos.
+
+  * When setting up the jobs you specify `nodes`, `ntasks` and
+    `tasks-per-node` (you should leave `cpus-per-task=`. The most
+    important value is `ntasks` - this is how many MPI processes you
+    want to run on. If this is larger than 36 then you will need to
+    request more than one node. You can actually remove
+    `tasks-per-node` if you want and SLURM will try and figure out how
+    to distribute the tasks to the nodes, but for more control you can
+    set it yourself.
+
+  * For example, if you wanted to run on 128 MPI processes then set
+    `ntasks=128`. This will need at least 4 nodes so set `nodes=4`. If
+    you want the MPI processes to be distributed evenly to the nodes
+    then set `tasks-per-node=32`.
+
+  * Jobs should be set to run in the reservation which has 8 nodes.
+
+  * Remember that the runtime should be something like one second or
+    more to be reliable. If you us small problem sizes or large
+    numbers of processes then it may run too quickly - you should run
+    using more iterations.
