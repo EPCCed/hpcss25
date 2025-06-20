@@ -150,7 +150,7 @@ and investigate Amdahl's law and Gustafson's law.
     should **ignore this** and use the codes in the HPCSS24 git repos.
 
   * When setting up the jobs you specify `nodes`, `ntasks` and
-    `tasks-per-node` (you should leave `cpus-per-task=`. The most
+    `tasks-per-node` (you should leave `cpus-per-task=1`). The most
     important value is `ntasks` - this is how many MPI processes you
     want to run on. If this is larger than 36 then you will need to
     request more than one node. You can actually remove
@@ -163,9 +163,20 @@ and investigate Amdahl's law and Gustafson's law.
     you want the MPI processes to be distributed evenly to the nodes
     then set `tasks-per-node=32`.
 
-  * Jobs should be set to run in the reservation which has 8 nodes.
+  * Jobs already should be set to run in the reservation which has 8 nodes.
 
   * Remember that the runtime should be something like one second or
     more to be reliable. If you us small problem sizes or large
     numbers of processes then it may run too quickly - you should run
     using more iterations.
+
+  * You can vary the amount of computation the code does by setting a
+    finite value of the Reynold's number - see the exercise sheet for
+    details (this also gives much nicer pictures!).
+
+
+  * The algorithm may take a large number of iteratios to converge,
+    especially for large problem sizes. If it does not reach
+    convergence then the output pictures will look weird. However, it
+    is **still OK in terms of performance** as each iteration takes
+    the same time.
