@@ -146,6 +146,13 @@ details will be explained next week.
 The main aim of today is to run parallel scaling of the CFD example
 and investigate Amdahl's law and Gustafson's law.
 
+You should plot speedup curves for a number of problem sizes to verify
+that larger problems scale better. It is often convenient to double
+the process count, e.g run in 1, 2, 4, 8, 16, 32, 64, 128 and 256
+processes (or some subset thereof). For large process counts you will
+probably have to use large problem sizes, i.e. a large value for the
+scale factor.
+
 The exercise sheet is at 
 [https://github.com/EPCCed/hpcss24-cfd/blob/main/doc/cfd-hpcss24.pdf](https://github.com/EPCCed/hpcss24-cfd/blob/main/doc/cfd-hpcss24.pdf).
   * The exercise sheets may say "download the code from here" - you
