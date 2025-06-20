@@ -146,6 +146,8 @@ details will be explained next week.
 The main aim of today is to run parallel scaling of the CFD example
 and investigate Amdahl's law and Gustafson's law.
 
+The exercise sheet is at 
+(https://github.com/EPCCed/hpcss24-cfd/blob/main/doc/cfd-hpcss24.pdf)[https://github.com/EPCCed/hpcss24-cfd/blob/main/doc/cfd-hpcss24.pdf].
   * The exercise sheets may say "download the code from here" - you
     should **ignore this** and use the codes in the HPCSS24 git repos.
 
