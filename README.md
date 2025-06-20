@@ -184,7 +184,7 @@ The exercise sheet is at
     details (this also gives much nicer pictures!).
 
 
-  * The algorithm may take a large number of iteratios to converge,
+  * The algorithm may take a large number of iterations to converge,
     especially for large problem sizes. If it does not reach
     convergence then the output pictures will look weird. However, it
     is **still OK in terms of performance** as each iteration takes
