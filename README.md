@@ -182,3 +182,12 @@ The exercise sheet is at
     convergence then the output pictures will look weird. However, it
     is **still OK in terms of performance** as each iteration takes
     the same time.
+
+### Running on the GPU
+
+I have added a GPU example to the sharpen repo - do a "git pull" to
+make sure you have the up-to-date versions.
+
+There is an exercise sheet at [https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpengpu.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpengpu.pdf).
+
+As before, **please ignore** anything this sheet says about downloading code from elsewhere - use the HPCSS24 repos!
