@@ -229,7 +229,7 @@ The CFD exercise sheet only covers the serial and MPI versions of the
   recommend using the `-O3` optimisation level.
 
 
-  * Visualising the Python output requires you to run an additional
+Visualising the Python output requires you to run an additional
     program: ` python ./plot_flow.py velocity.dat colourmap.dat
     output.png`. You can then view the PNG file with `display`.
 
