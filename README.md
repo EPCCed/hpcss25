@@ -198,3 +198,55 @@ make sure you have the up-to-date versions.
 There is an exercise sheet at [https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpengpu.pdf](https://github.com/EPCCed/hpcss24-sharpen/blob/main/doc/sharpengpu.pdf).
 
 As before, **please ignore** anything this sheet says about downloading code from elsewhere - use the HPCSS24 repos!
+
+### Tuesday PM
+
+  You are welcome to continue with Mark's OpenMP
+  exercises. However, if you want to tackle something different see
+  below:
+
+  * The CFD exercise sheet only covers the serial and MPI versions of the
+  cfd example. Here are some things you could consider with the serial
+  Python and parallel OpenMP versions. When compiling code I would
+  recommend using the `-O3` optimisation level.
+
+
+  * Visualising the Python output requires you to run an additional
+    program: ` python ./plot_flow.py velocity.dat colourmap.dat
+    output.png`. You can then view the PNG file with `display`.
+
+* How long does the Python code take compared to the serial C code
+    (consider a small example for a reasonable runtime)?
+* Is the performance different on the login vs compute nodes (you will
+    need to write an appropriate Slurm script). What about the serial
+    C code?
+* There is a version that uses numpy arrays and array syntax rather
+    than lists and explicit loops - see `cfd_numpy` and
+    `jacobi_numpy`. How much faster is this than the basic Python
+    code? Do you understand why? Again, is there a performance difference between login and compute nodes?
+
+* Try running the OpenMP code - how does its performance scale with
+  varying values of `OMP_NUM_THREADS`. For large values you must run
+  on the compute nodes - again, you will need to write a Slurm
+ script to run on a single node: specify `partition=standard` and `qos=short`.   How does this compare to MPI? Do you seen any unusual
+  effects when the thread count exceeds 18 - can you explain this?
+
+* How does the OpenMP performance scaling compare between the default
+  parameters and running with a finite value of the Reynolds number,
+  e.g. 2.0? Can you see what the problem is? Can you fix it by adding
+  appropriate OpenMP directives?
+
+  The way that `dosharpen` is parallelised in OpenMP is a bit weird - it is done by hand and does not use `parallel for`.
+
+  Rewrite the code so it uses `parallel for` over the first loop
+  rather than switching based on the value of `pixcount`. Is the
+  performance similar to the original version? What loop schedule
+  should you use - does it make a difference to performance?
+
+  [Here is a version of `dosharpen`](docs/dosharpen.c) written
+  deliberately to have load imbalance within the main loop (the width
+  of the filter is varied across the image from `2` to `d`). As
+  above, rewrite the code to use `parallel for`. Does the loop
+  schedule affect performance for the load-imbalanced sharpening
+  algorithm?  What is the best schedule - `static`, `dynamic`. ... ?
+
