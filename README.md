@@ -205,7 +205,7 @@ As before, **please ignore** anything this sheet says about downloading code fro
   exercises. However, if you want to tackle something different see
   below:
 
-  * The CFD exercise sheet only covers the serial and MPI versions of the
+ The CFD exercise sheet only covers the serial and MPI versions of the
   cfd example. Here are some things you could consider with the serial
   Python and parallel OpenMP versions. When compiling code I would
   recommend using the `-O3` optimisation level.
