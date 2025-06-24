@@ -205,7 +205,25 @@ As before, **please ignore** anything this sheet says about downloading code fro
   exercises. However, if you want to tackle something different see
   below:
 
- The CFD exercise sheet only covers the serial and MPI versions of the
+#### Sharpen example
+
+The way that `dosharpen` is parallelised in OpenMP is a bit weird - it is done by hand and does not use `parallel for`.
+
+  Rewrite the code so it uses `parallel for` over the first loop
+  rather than switching based on the value of `pixcount`. Is the
+  performance similar to the original version? What loop schedule
+  should you use - does it make a difference to performance?
+
+  [Here is a version of `dosharpen`](docs/dosharpen.c) written
+  deliberately to have load imbalance within the main loop (the width
+  of the filter is varied across the image from `2` to `d`). As
+  above, rewrite the code to use `parallel for`. Does the loop
+  schedule affect performance for the load-imbalanced sharpening
+  algorithm?  What is the best schedule - `static`, `dynamic`. ... ?
+
+#### CFD example
+
+The CFD exercise sheet only covers the serial and MPI versions of the
   cfd example. Here are some things you could consider with the serial
   Python and parallel OpenMP versions. When compiling code I would
   recommend using the `-O3` optimisation level.
@@ -235,18 +253,4 @@ As before, **please ignore** anything this sheet says about downloading code fro
   parameters and running with a finite value of the Reynolds number,
   e.g. 2.0? Can you see what the problem is? Can you fix it by adding
   appropriate OpenMP directives?
-
-  The way that `dosharpen` is parallelised in OpenMP is a bit weird - it is done by hand and does not use `parallel for`.
-
-  Rewrite the code so it uses `parallel for` over the first loop
-  rather than switching based on the value of `pixcount`. Is the
-  performance similar to the original version? What loop schedule
-  should you use - does it make a difference to performance?
-
-  [Here is a version of `dosharpen`](docs/dosharpen.c) written
-  deliberately to have load imbalance within the main loop (the width
-  of the filter is varied across the image from `2` to `d`). As
-  above, rewrite the code to use `parallel for`. Does the loop
-  schedule affect performance for the load-imbalanced sharpening
-  algorithm?  What is the best schedule - `static`, `dynamic`. ... ?
 
