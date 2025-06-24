@@ -254,3 +254,19 @@ Visualising the Python output requires you to run an additional
   e.g. 2.0? Can you see what the problem is? Can you fix it by adding
   appropriate OpenMP directives?
 
+### Friday AM
+
+**This session takes place in the main ground floor Bayes lecture room G.03**
+
+The session will comprise guest lectures from a range of HPC
+experts. Catering will be provided so please arrive well before the
+first talk to ensure you get a free breakfast!
+
+| Time | Event |
+| --- | ---  |
+|09:30 - 10:00| Tea, coffee and cakes (provided) |
+|10:00 - 11:00| Prof Mark Parsons, Director of EPCC: "The Next UK National Supercomputing Service: Plans for an Exascale Machine in Edinburgh" |
+|11:00 - 11:30| Tea and coffee (provided) |
+|11:30 - 12:00| Kirsty Pringle (EPCC) "The Role of Research Software Engineers in Public Engagement" |
+|12:00 - 12:45| Andrew Turner (EPCC) "Understanding and Reducing Carbon Emissions from HPC Systems" |
+
