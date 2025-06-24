@@ -207,14 +207,15 @@ As before, **please ignore** anything this sheet says about downloading code fro
 
 #### Sharpen example
 
-The way that `dosharpen` is parallelised in OpenMP is a bit weird - it is done by hand and does not use `parallel for`.
+ * The way that I have parallelised `doharpen()` in OpenMP is a bit weird
+- it is done by hand and does not use `parallel for`.
 
   Rewrite the code so it uses `parallel for` over the first loop
   rather than switching based on the value of `pixcount`. Is the
   performance similar to the original version? What loop schedule
   should you use - does it make a difference to performance?
 
-  [Here is a version of `dosharpen`](OpenMP/dosharpen.c) written
+ *   [Here is a version of `dosharpen`](OpenMP/dosharpen.c) written
   deliberately to have load imbalance within the main loop (the width
   of the filter is varied across the image from `2` to `d`). As
   above, rewrite the code to use `parallel for`. Does the loop
