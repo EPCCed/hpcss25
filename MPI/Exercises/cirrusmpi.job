@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This script is configured for rapid turnaround in the short queue
+# This only works for jobs *less than 20 minutes on 2 nodes or fewer*.
+# For more nodes set "--qos=standard"
+
+#SBATCH --job-name=hello
+#SBATCH --time=00:01:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --qos=short
+
+# Replace [budget code] below with your budget code
+# This is commented out so it will use the default project budget
+##SBATCH --account=m24oc-username
+
+# You can probably leave these options mostly as they are
+
+#SBATCH --output=%x-%j.out
+#SBATCH --exclusive
+#SBATCH --tasks-per-node=36
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=standard
+
+module --silent load intel-20.4/compilers
+module --silent load mpt
+
+# Launch the parallel job
+
+srun --unbuffered --distribution=block:block --hint=nomultithread ./hello
