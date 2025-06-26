@@ -1,0 +1,21 @@
+A few useful files for the MPI course.
+
+The file "cirrusmpi.job" should be used for submitting MPI jobs to the
+compute nodes of Cirrus using the SLURM batch system. Instructions are
+included as comments in the file itself.
+
+For very small test jobs on Cirrus, you can run interactively on the
+login node using: mpirun -n 4 ./hello
+
+The file "archer2mpi.job" should be used for submitting MPI jobs to
+the compute nodes of ARCHER2 using the SLURM batch system. Instructions
+are included as comments in the file itself.
+
+The Makefiles might be easier to use than compiling by hand. They are
+set up to deal with multiple source files, although they currently
+only contain a single file.
+
+You will have to edit the Makefile for your target system. Apropriate
+compiler settings are included for the EPCC systems ARCHER2 and
+Cirrus, although one of these will be commented out so you may have to
+edit these lines.
